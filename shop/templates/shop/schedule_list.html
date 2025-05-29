@@ -1,0 +1,20 @@
+{% extends "shop/layout.html" %}
+{% load static %}
+
+
+{% block content %}
+<h2>Schedule</h2>
+<table>
+  <tr>
+    <th>ID</th><th>Work Days</th><th>Start Time</th><th>End Time</th>
+  </tr>
+  {% for s in schedules %}
+  <tr>
+    <td>{{ s.schedule_id }}</td>
+    <td>{{ s.work_days }}</td>
+    <td>{{ s.start_time }}</td>
+    <td>{{ s.end_time }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

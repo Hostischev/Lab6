@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}Django App{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'shop/css/style.css' %}">
+</head>
+<body>
+  <header><h1>My Dormitory App</h1></header>
+  <nav>
+    <a href="{% url 'repair_list' %}">Repairs</a> |
+    <a href="{% url 'schedule_list' %}">Schedule</a>
+  </nav>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

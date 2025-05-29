@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'base.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'lab6_db',
+        'NAME': 'dormdb',
         'USER': 'postgres',
         'PASSWORD': 'Horrorscope1991',
         'HOST': 'localhost',

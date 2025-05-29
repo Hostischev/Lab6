@@ -1,0 +1,23 @@
+{% extends "shop/layout.html" %}
+{% load static %}
+
+
+{% block content %}
+<h2>Repair Requests</h2>
+<table>
+  <tr>
+    <th>ID</th><th>Student</th><th>Room</th><th>Employee</th><th>Description</th><th>Date</th><th>Status</th>
+  </tr>
+  {% for r in repairs %}
+  <tr>
+    <td>{{ r.request_id }}</td>
+    <td>{{ r.student_id }}</td>
+    <td>{{ r.room_id }}</td>
+    <td>{{ r.employee_id }}</td>
+    <td>{{ r.issue_description }}</td>
+    <td>{{ r.request_date }}</td>
+    <td>{{ r.request_status }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
