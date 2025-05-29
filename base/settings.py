@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'shop',
 ]
 
 MIDDLEWARE = [
@@ -76,8 +77,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'lab6_db',
-        'USER': 'lab6_user',
-        'PASSWORD': '1',
+        'USER': 'postgres',
+        'PASSWORD': 'Horrorscope1991',
         'HOST': 'localhost',
         'PORT': '5432',
     }
